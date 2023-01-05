@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+/* html font family */
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*button styling*/
 .btn-link{
     @apply bg-blue-600 text-slate-200;
     @apply  transition;
@@ -13,21 +18,17 @@
   @apply font-normal py-2 px-4 rounded;
 }
 
+/* All section styling */
+.section-div-box{
+  @apply container m-auto px-5 pt-20 pb-20 sm:px-6 lg:px-8 lg:w-screen h-full;
+}
+
 /* .btn-link:hover, */
 .btn-link:active {
   @apply bg-blue-600 text-white;
   @apply scale-90;
 }
 
-.footer-item{
-    @apply flex-grow flex-shrink-0 md:basis-1/2;
-}
-
-.form-input{
-    @apply bg-white text-blue-600;
-    padding: 0.75rem 1rem 0.25rem;
-    
-}
 
 /* Navigation */
 
@@ -51,7 +52,7 @@
   }
 
   to{
-    width: 85%;
+    width: 80%;
     translate: (1,1);
   }
 }
@@ -61,21 +62,9 @@
 }
 
 
-input,
-textarea{
-
-    width: 100%;
-    font-family: "Lato", sans-serif;
-    /* @apply text-indigo-600;
-    @apply bg-white; */
-    outline: none;
-    @apply border-none;
-    padding: 0.25rem 0.5rem 0.5rem 0;
-
-}
 
 
-
+/*hero section styling*/
 .hero{
   position: relative;
   background: linear-gradient(135deg, #000000d9, #00000000);
@@ -106,12 +95,62 @@ textarea{
 }
 
 .card{
-  @apply w-40 h-56 bg-white flex justify-center items-center shadow shadow-slate-400 rounded-md;
+  @apply w-56 md:w-64 bg-white text-blue-600 flex flex-col justify-start mt-1 shadow-md shadow-slate-600  rounded-b-2xl hover:scale-110 cursor-zoom-in;
+  height: 420px;
+  transition: all .2s ease-in;
 }
 
+.card-icon{
+  @apply text-5xl mb-3;
+}
+@screen md{
+  .card{
+    height: 520px;
+  }
+}
+
+
 /* about section and box design */
-.section-about{
-  height: 50vh;
+.line-bottomBlue::before{
+  content: '';
+  position: absolute;
+  @apply w-20;
+  height: 8px;
+  @apply bg-blue-600;
+  bottom: -8px;
+  left: -1px;
+  border-radius: 5px;
+  animation: swing 4s ease;
+  animation-iteration-count: 2;
+
+}
+
+.line-bottomWhite::before{
+  content: '';
+  position: absolute;
+  @apply w-20;
+  height: 8px;
+  @apply bg-white;
+  bottom: -8px;
+  left: -1px;
+  border-radius: 5px;
+  animation: swing 4s ease;
+  animation-iteration-count: 2;
+
+}
+
+@keyframes swing{
+  25%{
+    left: 20px;
+  }
+
+  50%{
+    left: -1px;
+  }
+
+  75%{
+    left: 20px;
+  }
 }
 
 .about-div{
@@ -213,4 +252,111 @@ textarea{
     bottom: -30px;
     left: -30px;
   }
+}
+
+/* Gallery home styling section */
+.curve-bg{
+}
+
+/* Training home section styling */
+.training-cards{
+  @apply flex flex-col sm:flex-row gap-6 w-full justify-center items-center;
+}
+
+.training-card{
+  @apply w-56 md:w-40 h-48 bg-white text-slate-600 flex justify-center items-center relative text-center font-semibold border
+border-white shadow-md shadow-slate-600  
+  rounded-2xl hover:scale-110 hover:text-blue-600 hover:shadow-blue-600 hover:border hover:border-blue-600 cursor-zoom-in;
+  transition: all .2s ease-in;
+}
+
+/* Contact and form styling homepage */
+.contact{
+  position: relative;
+  background: linear-gradient(135deg, #2563eb, #2564ebbb);
+
+}
+
+.contact::before{
+  content: '';
+  background: url('../images/sigmund-Fa9b57hffnM-unsplash.jpg') center center/cover no-repeat;
+  opacity: 1;
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.footer-item{
+  @apply flex-grow flex-shrink-0 md:basis-1/2;
+}
+
+.form-input{
+  @apply bg-white text-blue-600;
+  padding: 0.75rem 1rem 0.25rem;
+  
+}
+
+.Nap{
+  @apply flex justify-start items-center;
+  @apply py-4;
+}
+
+.Nap-info{
+  @apply ml-5;
+}
+
+/*form inputs styling*/
+input,
+textarea{
+
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    /* @apply text-indigo-600;
+    @apply bg-white; */
+    outline: none;
+    @apply border-none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+
+}
+
+/* main footer styling */
+.social-links{
+  @apply py-1 sm:px-1;
+
+}
+.social-link{
+  @apply px-1.5 text-slate-600 hover:text-blue-600 transition duration-300 ease-in-out;
+}
+
+.social-link>svg{
+  width: 18px;
+  height: 18px;
+}
+
+@screen sm{
+  .social-link{
+    @apply px-2;
+  }
+
+  .social-link>svg{
+
+    width: 20px;
+    height: 20px;
+  }
+}
+/* @screen md{
+  .social-link>svg{
+
+    width: 24px;
+    height: 24px;
+  }
+} */
+
+.guide-link{
+  @apply sm:px-1.5 md:px-3.5 underline text-slate-600 hover:text-blue-600 transition duration-300 ease-in-out;
 }
