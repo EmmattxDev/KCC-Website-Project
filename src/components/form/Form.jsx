@@ -1,6 +1,5 @@
 import React from 'react';
 import {AiOutlineSend} from 'react-icons/ai';
-import { useForm } from "react-hook-form";
 
 
 // The following component is an example of your existing Input Component
