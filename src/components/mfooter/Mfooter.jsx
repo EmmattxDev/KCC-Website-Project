@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { menuItems } from '../menu/Menu';
 import {blogLists} from '../lists/Lists';
-import { FaFacebook, FaHeart, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 
 function Mfooter() {
