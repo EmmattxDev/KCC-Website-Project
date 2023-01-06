@@ -2,28 +2,6 @@ import React from 'react';
 import {AiOutlineSend} from 'react-icons/ai';
 
 
-// The following component is an example of your existing Input Component
-// const Input = ({ label, register, required, type, name }) => (
-//     <div className='form-input border border-solid rounded-lg'>
-//         <label htmlFor="name">Name</label>
-//         <input type="text" name="name" id=""  />
-//         <label>{label}</label>
-//         <input {...register(label, { required })} />
-//     </div>
-
-// );
-
-// you can use React.forwardRef to pass the ref too
-// const Select = React.forwardRef(({ onChange, onBlur, name, label }, ref) => (
-//     <>
-//       <label>{label}</label>
-//       <select name={name} ref={ref} onChange={onChange} onBlur={onBlur}>
-//         <option value="20">20</option>
-//         <option value="30">30</option>
-//       </select>
-//     </>
-// ));
-
 const Form = () => {
     // const { register, handleSubmit, watch, formState: { errors } } = useForm();
     // const onSubmit = data => console.log(data);
@@ -71,3 +49,5 @@ const Form = () => {
 }
 
 export default Form
+
+

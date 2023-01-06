@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaClock, FaEnvelopeOpen, FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { Form } from '../';
+import { Form, NewsletterForm } from '../';
 
 
 function Footer() {
@@ -78,6 +78,7 @@ function Footer() {
           </div>
 
           <Form />
+          <NewsletterForm />
           
         </div>
 
