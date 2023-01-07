@@ -8,7 +8,7 @@ const Form = () => {
 
   return (
     <div className='flex flex-col lg:px-2'>
-        <form action="" method="POST" encType='' className='grid grid-flow-row gap-6'>
+        <form action="" method="POST" encType='application/x-www-form-urlencoded' className='grid grid-flow-row gap-6'>
 
             <div className='grid grid-flow-row lg:grid-flow-col gap-6'>
 
