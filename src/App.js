@@ -3,7 +3,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import './css/input.css';
 import { Home, About, Services, Contact, Gallery, Training} from './pages';
 import { Navbar, Mfooter } from './components';
 

@@ -87,7 +87,7 @@ function Mfooter() {
             </div>
 
             <div className='flex flex-row justify-center text-slate-600'>
-              <p className='text-center'>&copy; 2022 Kingdom College Computers. All Rights Reserved. Coded by <a href='https://www.linkedin.com/in/emmanuel-chukwuka' className='hover:text-blue-600 underline font-semibold'>EmmattxDev</a></p>
+              <p className='text-center'>&copy; {new Date().getFullYear()} Kingdom College Computers. All Rights Reserved. Coded by <a href='https://www.linkedin.com/in/emmanuel-chukwuka' className='hover:text-blue-600 underline font-semibold'>EmmattxDev</a></p>
             </div>
           </div>
         </div>
