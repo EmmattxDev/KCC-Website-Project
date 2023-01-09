@@ -7,10 +7,10 @@ const Hero = () => {
   <>
     <header className='hero'>
       
-      <div className="container m-auto pb-8 sm:pb-16 md:pb-20 lg:w-screen lg:pb-28 lg:pt-10 xl:pb-32 overflow-hidden h-screen">
+      <div className="container m-auto pb-8 sm:pb-16 md:pb-20 lg:w-screen lg:pb-28 lg:pt-10 xl:pb-32 overflow-hidden h-full">
       
         <section className="w-full max-w-7xl lg:h-full pt-8 px-5 sm:px-6 lg:px-8 md:pt-32 lg:pt-10">
-          <div className="sm:text-center lg:text-left">
+          <div className="sm:text-center lg:text-left ">
 
             <h1 className="text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Welcome to</span>
