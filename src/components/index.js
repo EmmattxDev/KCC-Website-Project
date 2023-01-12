@@ -5,3 +5,8 @@ export {default as Form} from './form/Form';
 export {default as NewsletterForm} from './testform/NewsletterForm';
 export {default as Footer} from './footer/Footer';
 export {default as Mfooter} from './mfooter/Mfooter';
+
+// menu.addEventListener('click', function(e) {
+//     drawer.classList.toggle('open');
+//     e.stopPropagation();
+//   });

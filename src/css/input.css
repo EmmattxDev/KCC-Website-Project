@@ -44,18 +44,36 @@ html{
 
 }
 
-@keyframes flow{
+@media (min-width: 768px){
+  @keyframes flow{
+  
+    from{
+     translate: (0, 0);
+  
+    }
+  
+    to{
+  
+      width: 80%;
+      translate: (1,1);
+    }
+  }
+}
 
+@keyframes flow{
+  
   from{
    translate: (0, 0);
 
   }
 
   to{
-    width: 80%;
-    translate: (1,1);
+
+    width: 40%;
+    translate: (1);
   }
 }
+
 
 .active-link{
   @apply text-blue-600;
@@ -255,8 +273,7 @@ html{
 }
 
 /* Gallery home styling section */
-.curve-bg{
-}
+
 
 /* Training home section styling */
 .training-cards{
@@ -349,14 +366,8 @@ textarea{
     height: 20px;
   }
 }
-/* @screen md{
-  .social-link>svg{
-
-    width: 24px;
-    height: 24px;
-  }
-} */
 
 .guide-link{
   @apply sm:px-1.5 md:px-3.5 underline text-slate-600 hover:text-blue-600 transition duration-300 ease-in-out;
 }
+
