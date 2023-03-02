@@ -15,13 +15,13 @@ function About() {
             <h1 className='relative line-bottomBlue text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl md:text-6xl'>About Us</h1>
           </div>
 
-          <div className='flex flex-col gap-y-20 md:flex-row justify-center items-center md:gap-20'>
+          <div className='flex flex-col md:flex-row justify-center items-center'>
 
-            <div className='lg:w-2/5 md:w-2/4 w-3/4 relative box-d1 box-d2'>
+            <div className='lg:w-2/5 md:w-2/4 w-3/4 relative box-d1 box-d2 '>
               <img src={company} className='md:max-w-full img-width' alt="company building; company office" />
             </div>
 
-            <div className='md:w-2/4 relative about-div flex flex-col item-center'>
+            <div className='md:w-2/4 relative about-div flex flex-col item-center mt-20 '> 
               <h1 className='relative about-text text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl md:text-6xl'>
                 <span className='absolute text-slate-300 text-6xl sm:text-7xl md:text-8xl left-0 -top-9 md:-left-8 md:-top-9 quote-ind1'>
                   <FaQuoteLeft />

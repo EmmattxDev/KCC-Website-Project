@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaClock, FaEnvelopeOpen, FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { Form, NewsletterForm } from '../';
+import { Form } from '../';
 
 
 function Footer() {
@@ -16,7 +16,7 @@ function Footer() {
 
         <div className='grid md:grid-cols-2 grid-cols-1 gap-7'>
           
-          <div className='flex flex-col justify-start items-start w-full px-2 sm:pr-2 sm:pl-5 pb-8 sm:pb-0 text-white'>
+          <div className='flex flex-col justify-start items-start w-full px-2 sm:pr-2 sm:pl-5 pb-8 sm:pb-0 mr-0 md:mr-3.5 mb-3.5 md:mb-0 text-white'>
 
             <div>
 
@@ -77,8 +77,7 @@ function Footer() {
             
           </div>
 
-          <Form />
-          <NewsletterForm />
+          <Form className='ml-0 md:ml-3.5 mt-3.5 md:mt-0'/>
           
         </div>
 

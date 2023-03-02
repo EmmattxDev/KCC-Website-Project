@@ -1,4 +1,4 @@
-import { AiFillBulb, AiFillCustomerService, AiFillHome, AiFillPicture, AiFillTrophy } from "react-icons/ai";
+import { AiFillBook, AiFillBulb, AiFillCustomerService, AiFillHome, AiFillPicture, AiFillTrophy } from "react-icons/ai";
 import { FaPhoneAlt } from "react-icons/fa";
 
 
@@ -31,6 +31,12 @@ export const menuItems = [
         title: 'Training',
         url: '/training',
         icon: <AiFillTrophy/>,
+    },
+
+    {
+        title: 'Blog',
+        url: '/Blog',
+        icon: <AiFillBook/>,
     },
 
     {

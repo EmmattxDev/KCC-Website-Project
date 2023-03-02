@@ -36,7 +36,8 @@ html{
   content: "";
   position: absolute;
   width: 0;
-  height: 2.5px;
+  height: 3.5px;
+  border-radius: 10px;
   @apply bg-blue-600;
   bottom: -4px;
   left: 8px;
@@ -44,7 +45,7 @@ html{
 
 }
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
   @keyframes flow{
   
     from{
@@ -58,7 +59,7 @@ html{
       translate: (1,1);
     }
   }
-}
+} */
 
 @keyframes flow{
   
@@ -75,8 +76,21 @@ html{
 }
 
 
-.active-link{
+.active{
   @apply text-blue-600;
+}
+
+.active::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3.5px;
+  border-radius: 10px;
+  @apply bg-blue-600;
+  bottom: -4px;
+  left: 8px;
+  @apply transition duration-300;
+  animation: flow 300ms ease-in-out 1 forwards;
 }
 
 
@@ -109,13 +123,45 @@ html{
 }
 
 .card-group{
-  @apply flex flex-wrap flex-col md:flex-row gap-10 justify-center items-center;
+  @apply flex flex-wrap flex-col md:flex-row justify-center items-center;
+
 }
 
 .card{
-  @apply w-56 md:w-64 bg-white text-blue-600 flex flex-col justify-start mt-1 shadow-md shadow-slate-600  rounded-b-2xl hover:scale-110 cursor-zoom-in;
+  @apply w-56 md:w-64 bg-white text-blue-600 flex flex-col justify-start mt-10 md:ml-10 md:mt-0 shadow-md shadow-slate-600  rounded-b-2xl hover:scale-110 cursor-zoom-in;
   height: 420px;
   transition: all .2s ease-in;
+}
+
+.card:first-child{
+  @apply mt-0;
+}
+
+.card:nth-child(3),
+.card:nth-child(4){
+  @apply mt-10;
+}
+
+.card:first-child,
+.card:nth-child(3){
+  @apply md:ml-0
+}
+
+@screen lg{
+  .card:nth-child(3){
+    @apply ml-10 mt-0;
+  }
+
+  .card:nth-child(4){
+    @apply ml-0;
+  }
+
+}
+
+@screen xl{
+  .card:nth-child(4){
+    @apply ml-10 mt-0;
+  }
 }
 
 .card-icon{

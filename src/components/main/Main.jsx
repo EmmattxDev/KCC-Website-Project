@@ -16,13 +16,13 @@ function main() {
             <h1 className='relative line-bottomBlue text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl md:text-6xl'>About Us</h1>
           </div>
 
-          <div className='flex flex-col gap-y-20 md:flex-row justify-center items-center md:gap-20'>
+          <div className='flex flex-col md:flex-row justify-center items-center'>
 
             <div className='lg:w-2/5 md:w-2/4 w-3/4 relative box-d1 box-d2'>
               <img src={company} className='md:max-w-full img-width' alt="company building; company office" />
             </div>
 
-            <div className='md:w-2/4 relative about-div flex flex-col item-center'>
+            <div className='md:w-2/4 relative about-div flex flex-col item-center mt-20 md:ml-20 md:mt-20'>
               <h1 className='relative about-text text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl md:text-6xl'>
                 <span className='absolute text-slate-300 text-6xl sm:text-7xl md:text-8xl left-0 -top-9 md:-left-8 md:-top-9 quote-ind1'>
                   <FaQuoteLeft />
@@ -33,7 +33,7 @@ function main() {
               </h1>
 
               <p className='relative mt-3 text-base text-blue-500 text-opacity-70 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0'>
-                At <span>Kingdom College Computers(KCC</span>) we are strongly committed to growing and advancing the potentials in indivivduals to help them thrive in the ever evolving society of ours.
+                At <span>Kingdom College Computers KCC</span> we are strongly committed to growing and advancing the potentials in indivivduals to help them thrive in the ever evolving society of ours.
                 <br/><br/>
                 Since X years of inception we have helped over 20,000+ indivivduals gain in-demand skills and as well get jobs, we have have helped built so many businesses(startups) by providing them with great up-to-date tools to boost their business finance, management and marketing while ensuring a super ROI and Brand reinforcement. 
               
@@ -47,8 +47,6 @@ function main() {
 
             </div>
           </div>
-
-
 
         </div>
         
@@ -64,7 +62,7 @@ function main() {
           </div>
           
           <div className='mb-20'>
-            <p className='text-slate-600'>We're dedicated and deligent towards making your business grow and reaching the height you desired it to be, we provide you these services through out the stages of your business.</p>
+            <p className='text-slate-600 px-3 md:px-20'>We're dedicated and deligent towards making your business grow and reaching the height you desired it to be, we provide you these services through out the stages of your business.</p>
           </div>
 
           <div className='flex flex-col justify-center items-center'>
@@ -154,20 +152,20 @@ function main() {
         <div className='section-div-box'>
 
 
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 items-center relative'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 items-center relative'>
 
-            <div className='w-full'>
+            <div className='w-full mr-0 md:mr-3'>
 
               <div className='mb-20'>
                 <h1 className='relative line-bottomBlue text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl md:text-6xl'>Our Training</h1>
               </div>
 
-              <p className='text-slate-600'>With our man track -<span className='text-blue-600 text-lg font-semibold'>"Get Skill, Get Job"</span> we are on the mission to impact, mobilize and empower the <span className='text-blue-600 text-lg font-semibold'>Youths</span>, training them through our <span className='text-blue-600 text-lg font-semibold'>Up-to-date</span> and <br/><span className='text-blue-600 text-lg font-semibold'>In-demand</span> skills acquisition <span className='text-blue-600 text-lg font-semibold'>Programme</span> so that they can have an essence of <span className='text-blue-600 text-lg font-semibold'>Accomplishment</span> in building a <span className='text-blue-600 text-lg font-semibold'>Brighter Future</span> for themselves and the society at large. Here are a some of the trainings we offer.</p>
+              <p className='text-slate-600 md:px-4'>With our man track -<span className='text-blue-600 text-lg font-semibold'>"Get Skill, Get Job"</span> we are on the mission to impact, mobilize and empower the <span className='text-blue-600 text-lg font-semibold'>Youths</span>, training them through our <span className='text-blue-600 text-lg font-semibold'>Up-to-date</span> and <br/><span className='text-blue-600 text-lg font-semibold'>In-demand</span> skills acquisition <span className='text-blue-600 text-lg font-semibold'>Programme</span> so that they can have an essence of <span className='text-blue-600 text-lg font-semibold'>Accomplishment</span> in building a <span className='text-blue-600 text-lg font-semibold'>Brighter Future</span> for themselves and the society at large. Here are a some of the trainings we offer.</p>
 
-              <Link to='/services' className='btn btn-link mt-10 flex w-fit items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:hover:scale-95 md:py-4 md:px-10 md:text-lg'>See More <FaArrowCircleRight className='ml-2'/></Link>
+              <Link to='/services' className='btn btn-link mt-10 flex w-fit items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:hover:scale-95 md:py-4 md:px-10 md:ml-4 md:text-lg'>See More <FaArrowCircleRight className='ml-2'/></Link>
             </div>
 
-            <div className='flex flex-col justify-center items-center gap-x-6 xs:gap-y-6 mt-5 pt-5 relative'>
+            <div className='flex flex-col justify-center items-center gap-x-6 xs:gap-y-6 mt-6 lg:mt-0 ml-0 lg:ml-3 pt-5 relative'>
 
               <div className='training-cards'>
 

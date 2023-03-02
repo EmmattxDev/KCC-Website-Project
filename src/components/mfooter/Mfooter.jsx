@@ -55,7 +55,7 @@ function Mfooter() {
                   return (
 
                     <li key={index} className='list-none px-1'>
-                      <Link to={menu.url} className='cursor-pointer'>
+                      <Link to={menu.url} reloadDocument className='cursor-pointer'>
 
                         {menu.title}
 

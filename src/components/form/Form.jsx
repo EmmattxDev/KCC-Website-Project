@@ -7,7 +7,7 @@ const Form = () => {
     // const onSubmit = data => console.log(data);
 
   return (
-    <div className='flex flex-col lg:px-2'>
+    <div className='flex flex-col lg:px-2 ml-0 md:ml-3.5 mt-3.5 md:mt-0'>
         <form action="" method="POST" encType='application/x-www-form-urlencoded' className='grid grid-flow-row gap-6'>
 
             <div className='grid grid-flow-row lg:grid-flow-col gap-6'>
